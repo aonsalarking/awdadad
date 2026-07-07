@@ -1,0 +1,58 @@
+:root {
+    --neon-green: #39FF14;
+    --blood-red: #8a0303;
+    --dark-bg: #0a0a0a;
+}
+
+body {
+    background: var(--dark-bg);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Atmospheric Fog Effect */
+.fog-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Hero Section with Cinematic Feel */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('city-ruin.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px var(--neon-green);
+    letter-spacing: 5px;
+}
+
+.cta-button {
+    padding: 20px 50px;
+    background: transparent;
+    border: 2px solid var(--neon-green);
+    color: var(--neon-green);
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: var(--neon-green);
+    color: black;
+    box-shadow: 0 0 40px var(--neon-green);
+}
